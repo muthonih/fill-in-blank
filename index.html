@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill-in-the-Blank Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fill-in-the-Blank Game</h1>
+        <form id="fillInForm">
+            <div class="question" id="q1">
+                <p>1. Which of the following can be used for making the membrane for the fiddle?</p>
+                <label><input type="radio" name="q1" value="A piece of skin">A piece of skin</label>
+                <label><input type="radio" name="q1" value="wooden wedge">wooden wedge</label>
+                <label><input type="radio" name="q1" value="sisal fibre">sisal fibre</label>
+            </div>
+            <div class="question" id="q2">
+                <p>2. A _________ is used for making a bow.</p>
+                <label><input type="radio" name="q2" value="metal nail">metal nail</label>
+                <label><input type="radio" name="q2" value="wooden wedge">wooden wedge</label>
+                <label><input type="radio" name="q2" value="flexible stick">flexible stick</label>
+            </div>
+            <div class="question" id="q3">
+                <p>3. Which part of the fiddle holds the tuning peg?</p>
+                <label><input type="radio" name="q3" value="Bridge">Bridge</label>
+                <label><input type="radio" name="q3" value="Neck">Neck</label>
+                <label><input type="radio" name="q3" value="Resonator">Resonator</label>
+            </div>
+            <div class="question" id="q4">
+                <p>4. Which part amplifies or makes the sound louder?</p>
+                <label><input type="radio" name="q4" value="Resonator">Resonator</label>
+                <label><input type="radio" name="q4" value="tuning peg">tuning peg</label>
+                <label><input type="radio" name="q4" value="bridge">bridge</label>
+            </div>
+            <div class="question" id="q5">
+                <p>5. Which part vibrates to make sound?</p>
+                <label><input type="radio" name="q5" value="wooden wedge">wooden wedge</label>
+                <label><input type="radio" name="q5" value="the bow">the bow</label>
+                <label><input type="radio" name="q5" value="the skin membrane">the skin membrane</label>
+            </div>
+            <button type="button" onclick="validateAnswers()">Submit</button>
+            <button type="button" onclick="resetForm()">Try Again</button>
+        </form>
+        <p id="result"></p>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
